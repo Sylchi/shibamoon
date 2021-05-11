@@ -1,0 +1,38 @@
+// app global css in SCSS form
+
+@font-face {
+  font-family: 'MF';
+  src: url("../assets/fonts/MF.ttf");
+}
+
+* {
+  font-family: 'MF';
+}
+
+a, a:visited, a:focus{
+  text-decoration: none;
+  color: inherit;
+}
+
+@for $i from 1 through 30 {
+  .font-#{$i} {
+    font-size: #{$i / 10}rem !important;
+  }
+  .border-radius-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+}
+
+.text-gradient{
+  background: -webkit-linear-gradient(#eee, #a1ffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px #66bcff26;
+  text-transform: uppercase;
+}
+
+.content{
+  margin: 0 auto;
+  max-width: 1200px;
+}
